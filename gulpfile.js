@@ -38,3 +38,7 @@ gulp.task("clean", function() {
     return del(["public/**/*", "!public"]);
 });
 gulp.task("build", ["clean", "compile:styles", "compile:scripts", "copy"]);
+gulp.watch("app/scss/**/*.scss", ["compile:styles"]);
+//watcher.on("change", function(event) {
+//    console.log("File " + event.path + " was " + event.type + ", running tasks..."); 
+//});
