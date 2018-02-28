@@ -1,0 +1,42 @@
+$red: rgb(243, 20, 98);
+$pink: rgb(216, 86, 121);
+$white: rgb(255, 255, 255);
+$lightRed: rgb(254, 167, 178);
+$darkRed: rgb(222, 34, 100);
+$black: rgb(24, 34, 34);
+$grey: rgb(113, 113, 113);
+$borderColor: rgb(230, 230, 230);
+$infoColor: rgb(83, 209, 228);
+$lightFont: "TTNorms-Light", arial, sans-serif;
+$mediumFont: "TTNorms-Medium", arial, sans-serif;
+$boldFont: "TTNorms-Bold", arial, sans-serif;
+$extraBoldFont: "TTNorms-ExtraBold", arial, sans-serif;
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+@mixin animation($animation...) {
+    -o-animation: $animation;
+    -moz-animation: $animation;
+    -webkit-animation: $animation;
+    animation: $animation;
+}
+@font-face {
+    font-family: "TTNorms-ExtraBold";
+    src: url("../fonts/TTNorms-ExtraBold.otf") format('opentype');
+}
+@font-face {
+    font-family: "TTNorms-Bold";
+    src: url("../fonts/TTNorms-Bold.otf") format('opentype');
+}
+@font-face {
+    font-family: "TTNorms-Medium";
+    src: url("../fonts/TTNorms-Medium.otf") format('opentype');
+}
+@font-face {
+    font-family: "TTNorms-Light";
+    src: url("../fonts/TTNorms-Light.otf") format('opentype');
+}

@@ -1,0 +1,116 @@
+.module-with-expert {
+    h2 {
+        font-size: 60px;
+        font-family: $boldFont;
+        font-weight: 700;
+        color: $black;
+        text-align: center;
+        margin-bottom: 72px;
+        &:after {
+            display: block;
+            margin: 40px auto;
+            position: relative;
+            content: "";
+            width: 510px;
+            height: 14px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-image: url("../img/underlining-blue.svg");
+        }
+        span {
+            display: block;
+            margin: 30px auto 0px;
+            font-size: 24px;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+    h3 {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 24px;
+        font-family: $lightFont;
+        font-weight: 300;
+        color: $black;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0px auto 0px;
+        padding: 0px;
+        li {
+            font-size: 16px;
+            font-family: $lightFont;
+            font-weight: 300;
+            padding-left: 15px;
+            color: $grey;
+            background-image: url("../img/bullet.svg");
+            background-repeat: no-repeat;
+            background-size: 8px 11px;
+            background-position: 0px 3px;
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+            line-height: 120%;
+        }
+    }
+    .expert-name {
+        display: inline-block;
+        padding-top: 20px;
+        padding-right: 20px;
+        color: $black;
+        font-size: 24px;
+        font-family: $mediumFont;
+        font-weight: 500;
+        margin: 0px auto 20px;
+        background-image: url("../img/background-2.svg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    .achievement {
+        margin-top: 60px;
+        .additory-container {
+            height: 90px;
+            margin: 0px auto 35px;
+            h4 {
+                position: relative;
+                min-width: 100px;
+                padding: 10px 20px 0px;
+                display: table-cell;
+                vertical-align: middle;
+                color: $red;
+                font-family: $boldFont;
+                font-weight: 700;
+                font-size: 30px;
+                text-align: center;
+                margin: 0px;
+                background-repeat: no-repeat;
+                background-image: url("../img/figures.svg");
+                background-size: 80px auto;
+                &:after {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -15px;
+                    margin-left: -53px;
+                    content: "";
+                    display: block;
+                    width: 106px;
+                    height: 7px;
+                    background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    background-image: url("../img/underlining-blue-small-1.svg");
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: $mediumFont;
+            font-color: $black;
+            text-align: center;
+        }
+    }
+}

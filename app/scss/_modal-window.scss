@@ -1,0 +1,77 @@
+.modal-window {
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: auto 100%;
+    background-image: url("../img/background.png");
+    form {
+        padding: 21px 32px 32px;
+        background-color: $white;
+        border-radius: 8px;
+        h3 {
+            margin: 0px auto 24px;
+            text-align: center;
+            font-family: $mediumFont;
+            font-weight: 500;
+            font-size: 18px;
+            color: $black;
+        }
+        .module-with-image {
+            position: relative;
+            &:after {
+                position: absolute;
+                top: -12px;
+                left: -20px;
+                content: "";
+                display: block;
+                width: 115px;
+                height: 392px;
+                background-image: url("../img/arrow.png");
+                background-repeat: no-repeat;
+            }
+        }
+        .additory-container {
+            margin-bottom: 22px;
+            div {
+                p {
+                    padding-left: 24px;
+                    color: $grey;
+                    font-size: 15px;
+                    font-family: $lightFont;
+                    font-weight: 300;
+                    margin: 0px auto;
+                }
+            }
+        }
+        .module-with-padding {
+            padding: 0px 20px;
+            .form-row {
+                position: relative;
+                &:not(:last-of-type) {
+                    margin-bottom: 16px;
+                }
+                label {
+                    font-size: 16px;
+                    font-family: $lightFont;
+                    font-weight: 300;
+                    color: $black;
+                    margin: 0px;
+                }
+                input:not([type=submit]) {
+                    padding: 0px 10px;
+                    width: 100%;
+                    height: 46px;
+                    border: 1px solid rgb(230, 230, 230);
+                    border-radius: 8px;
+                }
+            }
+            input[type=submit] {
+                display: block;
+                width: 90%;
+                margin: 16px auto 0px;
+                border: none;
+                border-radius: 52px;
+                height: 52px;
+            }
+        }
+    }
+}

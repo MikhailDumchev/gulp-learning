@@ -1,0 +1,88 @@
+.module-with-advantages {
+    background-repeat: no-repeat;
+    background-image: url("../img/bg.png");
+    background-size: 1920px auto;
+    background-position: 50% 50%;
+    .advantage {
+        position: relative;
+        padding-left: 27px;
+        margin-bottom: 30px;
+        &:before {
+            content: attr(data-number);
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            display: block;
+            padding: 2px 7px;
+            border-radius: 100%;
+            background-color: $lightRed;
+            color: $white;
+            text-align: center;
+            font-size: 10px;
+        }
+        h3 {
+            font-size: 16px;
+            font-family: $mediumFont;
+            font-weight: 500;
+            color: $black;
+            text-transform: uppercase;
+            margin: 0px auto 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            li {
+                position: relative;
+                color: $grey;
+                font-family: $lightFont;
+                font-weight: 300;
+                font-size: 16px;
+                padding-left: 10px;
+                &:before {
+                    content: "-";
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+        }
+        p {
+            font-family: $lightFont;
+            font-weight: 300;
+            font-size: 16px;
+            color: $grey;
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    h2 {
+        font-size: 40px;
+        font-family: $boldFont;
+        font-weight: 700;
+        color: $black;
+        text-align: center;
+        margin-bottom: 60px;
+        &:after {
+            display: block;
+            margin: 40px auto;
+            position: relative;
+            content: "";
+            width: 100%;
+            height: 14px;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-image: url("../img/underlining-blue.svg");
+        }
+    }
+    .conclusion {
+        border-bottom: 2px solid $pink;
+        border-top: 2px solid $pink;
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $mediumFont;
+        color: $pink;
+        text-align: center;
+    }
+}
